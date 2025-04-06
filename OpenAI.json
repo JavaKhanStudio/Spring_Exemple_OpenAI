@@ -1,0 +1,143 @@
+{
+  "name": "OpenAI",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "Deprecated Usage",
+      "filename": "Deprecated Usage.bru",
+      "seq": 4,
+      "request": {
+        "url": "http://localhost:8080/openAI/native/usage",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Native Text Generation",
+      "filename": "Native Text Generation.bru",
+      "seq": 1,
+      "request": {
+        "url": "http://localhost:8080/openAI/native/message?prompt=Hello",
+        "method": "GET",
+        "headers": [],
+        "params": [
+          {
+            "name": "prompt",
+            "value": "Hello",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Api Text Generation",
+      "filename": "Api Text Generation.bru",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8080/openAI/api/message?prompt=Hello",
+        "method": "GET",
+        "headers": [],
+        "params": [
+          {
+            "name": "prompt",
+            "value": "Hello",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "Api Image Generation",
+      "filename": "Api Image Generation.bru",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8080/openAI/api/image?prompt=Hello",
+        "method": "GET",
+        "headers": [],
+        "params": [
+          {
+            "name": "prompt",
+            "value": "Hello",
+            "type": "query",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "docs": "",
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "OpenAI",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0,
+    "filesCount": 0
+  }
+}
